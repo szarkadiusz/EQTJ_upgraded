@@ -1,0 +1,4 @@
+FROM openjdk:11
+ADD eqtj1.0.jar .
+EXPOSE 8080 
+CMD java -jar eqtj1.0.jar
