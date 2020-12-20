@@ -11,14 +11,26 @@ import java.util.Random;
 
 @Controller
 public class HomeController {
+
     @Autowired
     DBManager dbManager;
+
     public long randomNumberCreator() {
         Random rnd = new Random();
         return rnd.nextInt(101);
     }
 
+    public int correctAnswerCounter(){
+        int correctAnswer=0;
 
+        return correctAnswer;
+    }
+
+    public int wrongAnswerCounter(){
+        int wrongAnswer=0;
+
+        return wrongAnswer;
+    }
 
 
 
@@ -31,10 +43,5 @@ public class HomeController {
         return "index";
     }
 
-    @PostMapping("/")
-    public void postResult(Model model) {
-//        model.addAttribute() - wysłac wynik do bazy wyniki
-        //wywołac kolejne [yttanie
 
-    }
 }

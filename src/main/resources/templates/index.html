@@ -54,7 +54,6 @@
             </nav>
         </div>
     </header>
-
     <main class="px-3">
         <BR>
         <BR>
@@ -119,7 +118,7 @@
         <div>
             <style scoped="">
                 .button-success,
-                .button-error,
+                .button-error
                 {
                     color: white;
                     border-radius: 4px;
@@ -138,8 +137,14 @@
 
 
             </style>
-            <button class="button-success pure-button" onClick="window.location.reload();" >Tak</button>
-            <button class="button-error pure-button" onClick="window.location.reload();">Nie</button>
+            <button class="button-success pure-button" onClick="window.location.reload(); " >Tak</button>
+            <button class="button-error pure-button" onClick="window.location.reload(); ">Nie</button>
+
+
+<BR>
+            <p>Poprawne: <a th:="">0</a></p>
+            <p>Nieprawidłowe: <a id="clicksW">0</a></p>
+
             <BR>
             <BR>
             <BR>
