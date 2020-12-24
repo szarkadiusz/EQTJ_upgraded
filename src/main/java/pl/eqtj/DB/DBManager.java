@@ -29,7 +29,7 @@ public class DBManager {
     }
 
     public void fillDatabase(String newAnswer, String newQuestion) {
-        saveEntity(new QuestionsEntity(200L, newQuestion, newAnswer));
+        saveEntity(new QuestionsEntity(100L, newQuestion, newAnswer));
 
     }
 }

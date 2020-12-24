@@ -49,11 +49,13 @@
         <div>
             <h3 class="float-md-start mb-0">Eleven Questions To Java</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
                 <a class="nav-link active" aria-current="page" href="#">Dodaj pytanie</a>
                 <a class="nav-link" href="#">Popraw pytanie</a>
             </nav>
         </div>
     </header>
+
     <main class="px-3">
         <BR>
         <BR>
@@ -69,46 +71,17 @@
 
         </p>
 
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sprawdź odpowiedź
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="dropdown-item" th:text="${dbManagerA}" th:onclick=""></p>
 
-        <p>
-        <h3> Sprawdź odpowiedź, przesuń stronę w dół...</h3></p>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <BR>
-        <p th:text="${dbManagerA}" th:onclick=""></p>
+            </div>
+        </div>
+
         <BR>
         <BR>
         <p>
@@ -118,7 +91,7 @@
         <div>
             <style scoped="">
                 .button-success,
-                .button-error
+                .button-error,
                 {
                     color: white;
                     border-radius: 4px;
@@ -137,14 +110,8 @@
 
 
             </style>
-            <button class="button-success pure-button" onClick="window.location.reload(); " >Tak</button>
-            <button class="button-error pure-button" onClick="window.location.reload(); ">Nie</button>
-
-
-<BR>
-            <p>Poprawne: <a th:="">0</a></p>
-            <p>Nieprawidłowe: <a id="clicksW">0</a></p>
-
+            <button class="button-success pure-button" onClick="window.location.reload();">Tak</button>
+            <button class="button-error pure-button" onClick="window.location.reload();">Nie</button>
             <BR>
             <BR>
             <BR>

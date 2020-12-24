@@ -1,20 +1,4 @@
-/*
- * Globals
- */
 
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #ffcd39;
-  text-shadow: #000000; /* Prevent inheritance from `body` */
-}
-
-
-/*
- * Base structure
- */
 html {
   scroll-behavior: smooth;
 }

@@ -2931,14 +2931,14 @@ textarea.form-control-lg {
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
-    background-color: #0d6efd;
-    border-color: #0d6efd
+    color: #e7f1ff;
+    background-color: #6c757d;
+    border-color: #6c757d
 }
 
 .btn-secondary {
-    color: #ffcd39;
-    background-color: #000000;
+    color: #e7f1ff;
+    background-color: #6c757d;
     border-color: #6c757d
 }
 
@@ -2949,9 +2949,9 @@ textarea.form-control-lg {
 }
 
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
-    color: #fff;
-    background-color: #5c636a;
-    border-color: #565e64;
+    color: #e7f1ff;
+    background-color: #6c757d;
+    border-color: #6c757d
     box-shadow: 0 0 0 .25rem rgba(130, 138, 145, .5)
 }
 
