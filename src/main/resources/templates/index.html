@@ -1,5 +1,6 @@
 <!doctype html>
-<html lang="en" class="h-100" xmlns:th="http://www.thymeleaf.org" id="top">
+<html lang="en" class="h-100" xmlns:th="http://www.thymeleaf.org" id="top"
+      xmlns:white-space="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,9 +41,9 @@
 
     <script>
         function clickCounterq() {
-            if (typeof(Storage) !== "undefined") {
+            if (typeof (Storage) !== "undefined") {
                 if (localStorage.clickcount) {
-                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
                 } else {
                     localStorage.clickcount = 1;
                 }
@@ -51,10 +52,11 @@
                 document.getElementById("resultQ").innerHTML = "Sorry, your browser does not support web storage...";
             }
         }
+
         function clickCounterA() {
-            if (typeof(Storage) !== "undefined") {
+            if (typeof (Storage) !== "undefined") {
                 if (localStorage.clickcount) {
-                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                    localStorage.clickcount = Number(localStorage.clickcount) + 1;
                 } else {
                     localStorage.clickcount = 1;
                 }
@@ -63,13 +65,14 @@
                 document.getElementById("resultA").innerHTML = "Sorry, your browser does not support web storage...";
             }
         }
-        function resetClick(){
+
+        function resetClick() {
             localStorage.clear();
         }
     </script>
 
 </head>
-<body class="d-flex h-100 text-center text-white bg-dark" >
+<body class="d-flex h-100 text-center text-white bg-dark">
 
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -99,17 +102,15 @@
 
         </p>
 
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="btn-group dropleft">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Sprawdź odpowiedź
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown-item" th:text="${dbManagerA}" th:onclick=""></p>
+                <div class="dropdown-menu">
+                <p class="dropdown-item" th:text="${dbManagerA}" th:onclick="" white-space: pre-wrap></p>
 
             </div>
         </div>
-
         <BR>
         <BR>
         <p>
@@ -120,8 +121,7 @@
             <style scoped="">
                 .button-success,
                 .button-error,
-                .button-reset
-                {
+                .button-reset {
                     color: white;
                     border-radius: 4px;
                     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -136,7 +136,8 @@
                     background: rgb(202, 60, 60);
                     /* this is a maroon */
                 }
-                .button-reset{
+
+                .button-reset {
                     background: rgb(202, 145, 60);
                     /* this is a maroon */
                 }
